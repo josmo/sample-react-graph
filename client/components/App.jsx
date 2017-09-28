@@ -13,12 +13,14 @@ const client = new ApolloClient({
   }),
 });
 import EmployeeList from './EmployeeList.jsx';
+import Analyst from './Analyst.jsx';
 
 export default class App extends React.Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <EmployeeList/>
+        <Analyst/>
+        {/*<EmployeeList/>*/}
       </ApolloProvider>);
   }
 }
